@@ -1,0 +1,668 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Yekan";
+  src: url(../Font/Yekan.ttf);
+}
+@font-face {
+  font-family: "Byekan";
+  src: url(../Font/Byekan.ttf);
+}
+@font-face {
+  font-family: "lalezar";
+  src: url(../Font/lalezar.ttf);
+}
+
+body {
+  font-family: Yekan;
+}
+
+.header {
+  height: 10%;
+  margin: 15px 35px;
+}
+
+/* قسمت اول هدر */
+
+.section1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  font-family: Byekan;
+  direction: ltr;
+  font-weight: bold;
+}
+
+.phone p span {
+  font-size: 20px;
+  color: #9e624c;
+}
+
+.logo-login {
+  display: flex;
+  align-items: center;
+}
+
+.logo-login .login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  width: 132px;
+  height: 50px;
+  border: 1px solid #28221e;
+  border-radius: 35px;
+  color: #28221e;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* قسمت دوم هدر */
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1295px;
+  width: 100%;
+  height: 68px;
+  background-color: #28221e;
+  border-radius: 100px;
+  margin-top: 15px;
+}
+
+.menu .container-menu li a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.menu .container-menu {
+  display: flex;
+  align-items: center;
+  margin: 0 30px;
+  list-style: none;
+  font-size: 18px;
+}
+
+.menu .container-menu li {
+  margin: 0 20px;
+  color: white;
+  position: relative;
+}
+
+.has-submenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.has-submenu .submenu {
+  position: absolute;
+
+  backdrop-filter: blur(65px) saturate(0%);
+  background-color: rgba(132, 118, 105, 0.3);
+  border: 0px solid rgba(132, 118, 105, 0);
+  border-radius: 18px;
+
+  border: 0 solid #28221ed2;
+  width: 160px;
+  height: 155px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 30px;
+  left: -20px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+}
+
+.has-submenu .submenu li {
+  list-style: none;
+  display: block;
+  width: 100%;
+}
+
+.has-submenu .submenu li a {
+  text-decoration: none;
+  display: block;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.has-submenu:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.has-submenu .submenu li:hover {
+  background-color: #28221e;
+}
+
+.has-submenu i {
+  transition: transform 0.3s ease;
+}
+
+.has-submenu:hover i {
+  transform: rotate(180deg);
+}
+
+/* ریسپانسیو هدر */
+
+/* قسمت بنر */
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  width: 1285px;
+  margin: 0 auto;
+}
+
+.main .baner1 {
+  width: 456px;
+  height: 435px;
+  background-color: #28221e;
+  border-radius: 20px;
+  position: relative;
+}
+
+.main .baner1 p {
+  font-family: lalezar;
+  color: #ffffff;
+  font-size: 60px;
+  position: absolute;
+  top: 120px;
+  right: 120px;
+}
+
+.main .baner1 img {
+  position: absolute;
+  top: 124px;
+  right: 310px;
+}
+
+.main .baner1 h3 {
+  position: absolute;
+  top: 215px;
+  right: 93px;
+  color: #f2e5da;
+}
+
+.main .baner1 button {
+  all: unset;
+  cursor: pointer;
+  background-color: #ffffff33;
+  color: #ffffff;
+  width: 180px;
+  height: 50px;
+  border-radius: 100px;
+  position: relative;
+  top: 280px;
+  right: 90px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.main .baner1 button i {
+  font-size: 39px;
+  margin-right: 37px;
+}
+
+.main .baner2 {
+  position: relative;
+  width: 805px;
+  height: 435px;
+  border-radius: 20px;
+  background-image: conic-gradient(
+    from 258deg at 0% 97%,
+    rgba(132, 118, 105, 1) 36deg,
+    rgba(205, 187, 191, 1) 144deg,
+    rgba(132, 118, 105, 1) 263deg
+  );
+}
+
+.main .baner2 img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.main .baner2 h2 {
+  position: absolute;
+  color: #ffffff;
+  top: 140px;
+  right: 50px;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.main .baner2 h3 {
+  position: absolute;
+  color: #ffffff;
+  top: 217px;
+  right: 50px;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+/* تیتر */
+
+.titr {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  margin-top: 55px;
+}
+
+/* دسته بندی */
+
+.category {
+  margin-top: 50px;
+}
+
+.category .catlogo {
+  display: flex;
+}
+.category .catlogo .conttext h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #28221e;
+}
+
+.category .catlogo .conttext p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #28221e;
+}
+
+/* قسمت پایین دسته بندی محصولات */
+
+.allcategory {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category1,
+.category2,
+.category3,
+.category4,
+.category5,
+.category6,
+.category7,
+.category8 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 35px;
+}
+
+.allcategory h3 {
+  color: #28221e;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.allcategory img {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+/* تخفیف ویژه */
+
+.sale-pro {
+  width: 1075px;
+  height: 438px;
+  background-color: #28221e;
+  border-radius: 29px;
+  margin: 60px auto;
+}
+
+.sale-pro h2 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.sale-pro .cont-sale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 910px;
+  height: 400px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  margin: 25px auto;
+}
+
+.sale-pro .cont-sale .sale1,
+.sale2,
+.sale3 {
+  width: 260px;
+  height: 360px;
+  border: 1.5px solid #e9e9e8;
+  border-radius: 20px;
+  margin: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-section img {
+  margin-top: 5px;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.info-section h2 {
+  font-size: 18px;
+  margin: 0;
+  color: #333;
+}
+
+.info-section p {
+  font-size: 14px;
+  color: #777;
+  margin: 3px 0;
+}
+
+.price-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.original {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.discounted {
+  font-size: 18px;
+  color: #d35400;
+  font-weight: bold;
+}
+
+/* بنر */
+
+.baner {
+  width: 1100px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 140px;
+}
+
+.baner div {
+  width: 300px;
+  height: 160px;
+  background-color: #28221e;
+  border-radius: 24px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.baner div p {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* پرفروش ترین محصولات */
+
+.best-seller {
+  margin-top: 50px;
+  display: flex;
+}
+
+.best-seller .conttext-bestseller h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #28221e;
+}
+
+.best-seller .conttext-bestseller p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #28221e;
+}
+
+/* قسمت محصولات */
+
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.product .sale3 {
+  margin: 25px;
+}
+
+/* دکمه مشاهده بیشتر */
+
+.more-pro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.more-pro button {
+  all: unset;
+  cursor: pointer;
+  background-color: #9e624c;
+  color: #ffffff;
+  width: 165px;
+  height: 45px;
+  border-radius: 100px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.more-pro button i {
+  font-size: 39px;
+  margin-right: 42px;
+}
+
+/* آموزش اریک کافه */
+
+.sale-pro .cont-learn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.sale-pro .cont-learn .learn {
+  margin: 0 8px;
+  height: 400px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+.sale-pro .cont-learn .learn img {
+  width: 380px;
+  padding: 8px;
+  border-radius: 20px;
+}
+
+.sale-pro .cont-learn .learn p {
+  width: 325px;
+  margin-right: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #28221e;
+}
+
+.sale-pro .cont-learn .learn a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #9e624c;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  margin-top: 20px;
+}
+
+.sale-pro .cont-learn .learn a i {
+  margin-right: 2px;
+  font-size: 25px;
+}
+
+/* قسمت بالای فوتر */
+
+.footer1 {
+  height: 380px;
+  background-color: #28221e;
+  margin-top: 120px;
+}
+
+.footer1 .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  position: relative;
+}
+
+.footer1 .top .name-top {
+  font-size: 33.46px;
+  font-weight: 800;
+  color: #ffffff;
+  font-family: lalezar;
+}
+
+.footer1 .top .det-top {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  width: 350px;
+  text-align: center;
+  margin-top: 10px;
+}
+.footer1 .top img {
+  position: absolute;
+  top: 31px;
+  right: 728px;
+  width: 25px;
+}
+
+.footer1 .middle ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer1 .middle ul li {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0 20px;
+}
+
+.footer1 hr {
+  border: 1px solid #ffffff1a;
+  width: 780px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 780px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.bottom .right section {
+  display: flex;
+  align-items: center;
+}
+
+.bottom .right section p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-right: 10px;
+  font-family: byekan;
+}
+
+.bottom .right section p span {
+  color: #9e624c;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.bottom .left img {
+  background-color: #ffffff19;
+  border-radius: 10px;
+}
+
+/* قسمت دوم فوتر */
+
+.footer2 {
+  height: 58px;
+  background-color: #1a1613;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer2 .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer2 .left img {
+  margin: 0 5px;
+}
+
+.footer2 .right,
+.left {
+  margin: 0 60px;
+}
