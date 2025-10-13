@@ -159,7 +159,34 @@ body {
   transform: rotate(180deg);
 }
 
+/* منوی همبرگری هاید شده */
+
+.header .section1 .phone .berger-menu {
+  font-size: 35px;
+  background-color: #f2e5da;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  display: none;
+}
+
 /* ریسپانسیو هدر */
+
+@media screen and (max-width: 760px) {
+  .section2,
+  .section1 .phone img,
+  .section1 .phone p,
+  .logo-login .login {
+    display: none;
+  }
+  .header .section1 .phone .berger-menu {
+    display: flex !important;
+  }
+}
 
 /* قسمت بنر */
 
